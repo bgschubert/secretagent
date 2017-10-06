@@ -77,12 +77,17 @@ body {
 .navigation .container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 960px;
 }
 
 .container li{
   color: white;
   padding: 0.75em 0;
+}
+
+.responsive-menu {
+  display: none;
 }
 
 /*Page Body*/
@@ -130,6 +135,8 @@ text-align: center;
 padding: 0.5rem 0px;
 }
 
+/*Store Info Styling*/
+
 .bottomrow{
   display: flex;
   justify-content: space-between;
@@ -171,4 +178,127 @@ padding: 0.5rem 0px;
 
 .footer {
   width: 960px;
+}
+
+@media only screen and (min-width: 471px) and (max-width: 1024px) {
+.pen, .watch {
+    width: 47%;
+  }
+.glasses{
+  display: none;
+}
+.storeinfo{
+  width: 35%;
+}
+.navigation .container{
+  display: none;
+}
+.responsive-menu{
+  display: block;
+  text-align: center;
+}
+.responsive-menu li{
+  padding: .75rem 0;
+}
+}
+
+@media only screen and (max-width: 470px) {
+  .image{
+    background-image:url("../images/moto.jpeg");
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+  }
+  .container{
+    margin: 0px auto;
+    width: 100%;
+  }
+  .headline{
+    position: relative;
+    top: 9.5rem;
+    background-color: black;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    width: auto;
+  }
+
+  .headline h4{
+    font-weight: bold;
+    font-size: .77rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .headline h1{
+    font-weight: bold;
+    font-size: .9rem;
+  }
+  .navigation .container{
+    display: none;
+  }
+  .responsive-menu{
+    display: block;
+    text-align: center;
+  }
+  .responsive-menu li{
+    padding: .75rem 0;
+  }
+  .toprow{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .pen, .glasses {
+    display: none;
+  }
+  .watch {
+    width: 90%;
+  }
+  .bottomrow{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .detail {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .storeinfo{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 90%;
+    text-align: left;
+  }
+
+  .sub-detail {
+    background-color: white;
+    color: black;
+    padding-bottom: .5rem;
+  }
+  .footerbox {
+    width: 100%;
+    background-color: black;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+  }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+  }
+
+
 }
