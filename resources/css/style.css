@@ -33,14 +33,138 @@ body {
   margin: 0px auto;
 }
 
+/*Site Banner*/
+
 .image{
   background-image:url("../images/moto.jpeg");
   height: 25rem;
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 
 .container{
   max-width: 960px;
   margin: 0px auto;
+}
+
+.headline{
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  background-color: black;
+  padding: 2rem 3rem;
+}
+
+.headline h4{
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.headline h1{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/*Nav Design*/
+
+.navigation{
+  width: 100%;
+  background-color: firebrick;
+
+}
+.navigation .container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+}
+
+.container li{
+  color: white;
+  padding: 0.75em 0;
+}
+
+/*Page Body*/
+
+.toprow{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  width: 960px;
+}
+
+
+.item-image {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 3rem;
+
+}
+
+.item-image img{
+  height: 9rem;
+}
+
+.glasses img{
+  max-width: 8rem;
+  max-height: 5rem;
+  padding: 2rem .5rem;
+
+}
+
+.pen, .watch, .glasses {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 4px solid black;
+}
+
+.name {
+background-color: black;
+text-align: center;
+padding: 0.5rem 0px;
+}
+
+.bottomrow{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  width: 960px;
+}
+
+.detail {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.storeinfo{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 35%;
+  text-align: left;
+}
+
+.sub-detail {
+  background-color: white;
+  color: black;
+}
+
+/*Footer Styling*/
+
+.footerbox {
+  width: 100%;
+  background-color: black;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}
+
+.footer {
+  width: 960px;
 }
